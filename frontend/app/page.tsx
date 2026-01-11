@@ -19,16 +19,34 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit() {
+  try {
     setLoading(true);
 
-    // IMPLEMENT BACKEND CALL HERE
-    await new Promise((r) => setTimeout(r, 800));
+    const res = await fetch("/api/predict", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        prompt,
+        model,
+      }),
+    });
 
-    setOutput("Model output will appear here.");
-    setScore(0.54);
+    if (!res.ok) {
+      throw new Error("Backend request failed");
+    }
 
+    const data = await res.json();
+
+    setScore(data.score);
+    setOutput(data.output);
+  } catch (err) {
+    console.error(err);
+    setOutput("Error computing score.");
+    setScore(null);
+  } finally {
     setLoading(false);
   }
+}
 
 
 
