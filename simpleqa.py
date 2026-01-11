@@ -32,4 +32,3 @@ def run_example():
 
   qs,ans = get_number_prompts(4321)
   save_prompts_to_json_file("simpleqa_prompts.json", qs, ans)
-run_example()
