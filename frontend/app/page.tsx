@@ -18,18 +18,53 @@ export default function Home() {
   const [score, setScore] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit() {
-  try {
-    setLoading(true);
+  // async function handleSubmit() {
+  // try {
+  //   setLoading(true);
 
-    const res = await fetch("/api/predict", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        prompt,
-        model,
-      }),
-    });
+  //   const res = await fetch("/api/predict", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       prompt,
+  //       model,
+  //     }),
+  //   });
+
+  async function handleSubmit() {
+    try {
+      setLoading(true);
+
+      const res = await fetch(
+        "https://aidk.onrender.com/score",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            prompt,
+            model,
+          }),
+        }
+      );
+
+
+      if (!res.ok) {
+        throw new Error("Backend error");
+      }
+
+      const data = await res.json();
+
+      setScore(data.score);
+      setOutput(data.output);
+    } catch (err) {
+      console.error(err);
+      setOutput("Error computing score");
+      setScore(null);
+    } finally {
+      setLoading(false);
+    }
+ }
+
 
     if (!res.ok) {
       throw new Error("Backend request failed");
