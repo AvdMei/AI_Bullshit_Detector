@@ -1,0 +1,101 @@
+category,question
+Software Engineering - Debugging,What is the first step an experienced engineer should take when investigating a reported software bug?
+Software Engineering - Debugging,When a bug is reported, what should be done first before attempting a fix?
+Software Engineering - Debugging,What is the initial action a senior engineer takes to debug an issue?
+Software Engineering - Debugging,Before changing code to fix a bug, what should an engineer do first?
+Software Engineering - Debugging,What is the most important first step in a professional debugging process?
+Software Engineering - Code Review,What is the primary focus of an effective code review?
+Software Engineering - Code Review,What should a reviewer prioritize when reviewing production code?
+Software Engineering Engineering - Code Review,During a code review, what matters more than style preferences?
+Software Engineering - Code Review,What is the main goal of professional code review?
+Software Engineering - Code Review,What should engineers primarily evaluate in a code review?
+DevOps / Reliability,What is the main goal of a post-incident review in a production outage?
+DevOps / Reliability,After a system outage, what should a postmortem primarily focus on?
+DevOps / Reliability,What is the purpose of an effective incident postmortem?
+DevOps / Reliability,In SRE practice, what is the key objective of post-incident analysis?
+DevOps / Reliability,What should teams aim to achieve with a production incident review?
+Cybersecurity,What security principle limits user access to only what is necessary?
+Cybersecurity,Which principle reduces risk by minimizing granted permissions?
+Cybersecurity,What access control concept restricts permissions to the minimum required?
+Cybersecurity,What core security principle helps prevent damage from compromised accounts?
+Cybersecurity,What principle ensures users have only the permissions they need?
+Data Engineering,What is the most critical concern when building a data pipeline for production use?
+Data Engineering,What should experienced data engineers prioritize over performance optimizations?
+Data Engineering,What is the primary responsibility when designing a reliable data pipeline?
+Data Engineering,What factor matters most for production data pipelines?
+Data Engineering,What must be ensured before scaling a data pipeline?
+Machine Learning - Deployment,What common issue causes deployed machine learning models to degrade over time?
+Machine Learning - Deployment,Why might a model perform well in training but poorly in production months later?
+Machine Learning - Deployment,What phenomenon occurs when real-world data changes after model deployment?
+Machine Learning - Deployment,What is a major risk to long-term ML model performance in production?
+Machine Learning - Deployment,What issue arises when production data no longer matches training data?
+Product Management,What should primarily drive product feature prioritization?
+Product Management,What is the most important factor when deciding what features to build next?
+Product Management,What should product decisions be grounded in above all else?
+Product Management,What guides effective feature prioritization in product management?
+Product Management,What should a product manager optimize for when planning a roadmap?
+UX Design,What should guide design decisions more than aesthetic preference?
+UX Design,What is the most important consideration in user experience design?
+UX Design,What should designers prioritize when evaluating design options?
+UX Design,What is the foundation of good UX design?
+UX Design,What should drive interface design decisions?
+Database Engineering,What is the most critical property a transactional database must maintain?
+Database Engineering,What must never be compromised in a production database system?
+Database Engineering,What is the primary concern when designing database transactions?
+Database Engineering,What property ensures data remains accurate and consistent?
+Database Engineering,What is the top priority in database system design?
+Cloud Architecture,What characteristic allows cloud systems to remain available despite failures?
+Cloud Architecture,What design principle helps systems survive component failures?
+Cloud Architecture,What property ensures a distributed system continues operating when parts fail?
+Cloud Architecture,What is a key goal of resilient cloud architecture?
+Cloud Architecture,What capability allows services to withstand infrastructure failures?
+Technical Leadership,What skill is most critical for effective technical leadership?
+Technical Leadership,What ability most strongly impacts a tech lead’s success?
+Technical Leadership,What distinguishes strong technical leaders from individual contributors?
+Technical Leadership,What is the most important non-technical skill for a tech lead?
+Technical Leadership,What capability enables teams to align and execute effectively?
+API Design,What must be preserved when evolving a public API?
+API Design,What is the biggest risk when changing an existing API?
+API Design,What should API designers avoid breaking?
+API Design,What principle protects existing API consumers?
+API Design,What constraint is most important when releasing new API versions?
+QA Engineering,What is the primary purpose of automated testing?
+QA Engineering,Why is test automation valuable in software development?
+QA Engineering,What should automated tests aim to achieve?
+QA Engineering,What problem does automated testing solve best?
+QA Engineering,What is the main benefit of having automated tests?
+Incident Management,What is the top priority during a live production incident?
+Incident Management,During an outage, what should teams focus on first?
+Incident Management,What matters most while actively handling an incident?
+Incident Management,What is the immediate goal in incident response?
+Incident Management,What should take precedence during a system outage?
+Security Engineering,What security strategy uses multiple layers of protection?
+Security Engineering,What approach reduces risk even if one security control fails?
+Security Engineering,What principle assumes breaches will happen and plans accordingly?
+Security Engineering,What strategy improves security by layering controls?
+Security Engineering,What concept involves overlapping security mechanisms?
+Data Science,What is the most important step before building a data science model?
+Data Science,What should a data scientist clarify before selecting algorithms?
+Data Science,What step most strongly determines project success in data science?
+Data Science,What should be defined clearly before analyzing data?
+Data Science,What foundational step precedes all modeling work?
+Agile Development,What is the core goal of agile development practices?
+Agile Development,What should agile teams focus on delivering frequently?
+Agile Development,What distinguishes agile development from traditional methods?
+Agile Development,What is the main purpose of short development iterations?
+Agile Development,What outcome should each sprint aim to achieve?
+Systems Design,What must be considered when designing systems expected to grow?
+Systems Design,What challenge arises when systems scale to large user bases?
+Systems Design,What consideration dominates large-scale system design?
+Systems Design,What issue becomes critical as system usage increases?
+Systems Design,What factor complicates designing distributed systems?
+Technical Documentation,What is the most important quality of good technical documentation?
+Technical Documentation,What should technical documentation prioritize above completeness?
+Technical Documentation,What makes documentation useful to engineers?
+Technical Documentation,What property of documentation reduces misuse and errors?
+Technical Documentation,What should documentation optimize for?
+Hiring / Interviews,What trait best predicts long-term success in technical roles?
+Hiring / Interviews,What should interviewers value more than familiarity with specific tools?
+Hiring / Interviews,What quality matters most in rapidly changing technical fields?
+Hiring / Interviews,What attribute allows engineers to adapt over time?
+Hiring / Interviews,What hiring signal correlates most with future growth?
