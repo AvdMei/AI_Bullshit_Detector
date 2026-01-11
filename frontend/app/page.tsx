@@ -36,7 +36,7 @@ export default function Home() {
       setLoading(true);
 
       const res = await fetch(
-        "https://aidk.onrender.com/score",
+        "RENDER LINK HERE",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
