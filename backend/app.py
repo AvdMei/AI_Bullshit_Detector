@@ -1,28 +1,28 @@
+import os
+import requests
 from fastapi import FastAPI
 from pydantic import BaseModel
-from fastapi.middleware.cors import CORSMiddleware
+
+HF_TOKEN = os.environ["HF_TOKEN"]
+MODEL_ID = "your-model-name"  # e.g. meta-llama/Llama-2-7b-chat-hf
 
 app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"], 
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-class ScoreRequest(BaseModel):
+class Req(BaseModel):
     prompt: str
-    model: str
 
 @app.post("/score")
-def score(req: ScoreRequest):
-    # ADD SCORE CALCULATION AND PROMPT OUTPUT HERE
-    score = 0.42
-    output = f"Processed with {req.model}"
+def score(req: Req):
+    response = requests.post(
+        f"https://api-inference.huggingface.co/models/{MODEL_ID}",
+        headers={
+            "Authorization": f"Bearer {HF_TOKEN}",
+            "Content-Type": "application/json",
+        },
+        json={"inputs": req.prompt},
+        timeout=60,
+    )
 
     return {
-        "score": score,
-        "output": output,
+        "output": response.json()
     }

@@ -32,38 +32,19 @@ export default function Home() {
   //   });
 
   async function handleSubmit() {
-    try {
-      setLoading(true);
+  setLoading(true);
 
-      const res = await fetch(
-        "RENDER LINK HERE",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            prompt,
-            model,
-          }),
-        }
-      );
+  const res = await fetch("https://your-backend.onrender.com/score", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prompt }),
+  });
 
+  const data = await res.json();
+  setOutput(JSON.stringify(data.output, null, 2));
 
-      if (!res.ok) {
-        throw new Error("Backend error");
-      }
-
-      const data = await res.json();
-
-      setScore(data.score);
-      setOutput(data.output);
-    } catch (err) {
-      console.error(err);
-      setOutput("Error computing score");
-      setScore(null);
-    } finally {
-      setLoading(false);
-    }
- }
+  setLoading(false);
+}
 
 
     if (!res.ok) {
